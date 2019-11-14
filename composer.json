@@ -1,0 +1,21 @@
+{
+    "name": "sparkqy/php-cms",
+    "license": "proprietary",
+    "description": "Basic PHP Cms",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Sparkqy",
+            "email": "triiko21@gmail.com"
+        }
+    ],
+    "require": {
+      "ext-pdo": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "src\\": "src",
+            "Engine\\DI\\": "src/DI"
+        }
+    }
+}

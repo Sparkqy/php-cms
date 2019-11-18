@@ -25,8 +25,9 @@ class Db
 
     /**
      * @throws DbException
+     * @return void
      */
-    private function connect()
+    private function connect(): void
     {
         try {
             $options = require_once __DIR__. '/../../Config/db_options.php';
@@ -47,7 +48,7 @@ class Db
      * @return $this
      * @throws DbException
      */
-    public static function instance(): self
+    public static function getInstance(): self
     {
         if (is_null(self::$instance)) {
             self::$instance = new self();

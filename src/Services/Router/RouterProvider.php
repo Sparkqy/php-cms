@@ -7,12 +7,15 @@ use src\Services\AbstractProvider;
 
 class RouterProvider extends AbstractProvider
 {
-    public static $serviceName = 'router';
+    /**
+     * @var string
+     */
+    const SERVICE_NAME = 'router';
 
     public function init(): void
     {
         $router = new Router('http://php-cms.loc');
 
-        $this->di->set(self::$serviceName, $router);
+        $this->di->set(self::SERVICE_NAME, $router);
     }
 }

@@ -2,7 +2,6 @@
 
 use src\Cms;
 use src\DI\DI;
-use src\Exceptions\DbException;
 use src\Services\AbstractProvider;
 
 require_once __DIR__ . '/../vendor/autoload.php';
@@ -19,10 +18,9 @@ try {
         $provider->init();
     }
 
-    $app = new Cms($di);
-    $app->run();
-} catch (ErrorException $e) {
+    $cms = new Cms($di);
+    $cms->run();
+} catch (\src\Exceptions\DbException $e) {
     echo $e->getMessage();
-} catch (DbException $e) {
-    echo $e->getMessage();
+    exit();
 }

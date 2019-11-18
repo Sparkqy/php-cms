@@ -2,8 +2,10 @@
 
 namespace src;
 
+use src\Core\Router\DispatchedRoute;
 use src\Core\Router\Router;
 use src\DI\DI;
+use src\Helpers\Url;
 use src\Services\Router\RouterProvider;
 
 class Cms
@@ -25,7 +27,7 @@ class Cms
     public function __construct(DI $di)
     {
         $this->di = $di;
-        $this->router = $this->di->get(RouterProvider::$serviceName);
+        $this->router = $this->di->get(RouterProvider::SERVICE_NAME);
     }
 
     /**
@@ -33,9 +35,23 @@ class Cms
      */
     public function run()
     {
-//        $this->router->add('home', '/home', 'HomeController', 'index');
-        echo '<pre>';
-        print_r($this->di);
-        echo '</pre>';
+        try {
+            require_once __DIR__ . '/../cms/routes.php';
+
+            $dispatchedRoute = $this->router->dispatch(Url::getRequestMethod(), Url::getUrl());
+
+            if (is_null($dispatchedRoute)) {
+                $dispatchedRoute = new DispatchedRoute('ErrorsController@show404');
+            }
+
+            list($class, $action) = explode('@', $dispatchedRoute->getController(), 2);
+            $controller = 'cms\\Controllers\\' . $class;
+            $parameters = $dispatchedRoute->getParameters();
+
+            call_user_func_array([new $controller($this->di), $action], $parameters);
+        } catch (\Exception $e) {
+            echo $e->getMessage();
+            exit();
+        }
     }
 }

@@ -4,10 +4,19 @@ namespace src\Core\Router;
 
 class Router
 {
+    /**
+     * @var string
+     */
     private $host;
 
+    /**
+     * @var UrlDispatcher
+     */
     private $dispatcher;
 
+    /**
+     * @var array
+     */
     private $routes = [];
 
     /**
@@ -20,20 +29,44 @@ class Router
     }
 
     /**
-     * @param string $key
+     * @param string $name
      * @param string $pattern
      * @param string $controller
-     * @param string $action
      * @param string $method
      * @return void
      */
-    public function add(string $key, string $pattern, string $controller, string $action, string $method = 'GET'): void
+    public function add(string $name, string $pattern, string $controller, string $method = 'GET'): void
     {
-        $this->routes[$key] = [
+        $this->routes[$name] = [
+            'method' => $method,
             'pattern' => $pattern,
             'controller' => $controller,
-            'action' => $action,
-            'method' => $method,
         ];
+    }
+
+    /**
+     * @param string $method
+     * @param string $url
+     * @return DispatchedRoute|null
+     */
+    public function dispatch(string $method, string $url): ?DispatchedRoute
+    {
+        return $this->getDispatcher()->dispatch($method, $url);
+    }
+
+    /**
+     * @return UrlDispatcher
+     */
+    public function getDispatcher(): UrlDispatcher
+    {
+        if (is_null($this->dispatcher)) {
+            $this->dispatcher = new UrlDispatcher();
+
+            foreach ($this->routes as $route) {
+                $this->dispatcher->register($route['method'], $route['pattern'], $route['controller']);
+            }
+        }
+
+        return $this->dispatcher;
     }
 }

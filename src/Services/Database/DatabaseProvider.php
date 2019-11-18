@@ -10,15 +10,15 @@ class DatabaseProvider extends AbstractProvider
     /**
      * @var string
      */
-    public static $serviceName = 'db';
+    const SERVICE_NAME = 'db';
 
     /**
      * @throws \src\Exceptions\DbException
      */
     public function init(): void
     {
-        $db = Db::instance();
+        $db = Db::getInstance();
 
-        $this->di->set(self::$serviceName, $db);
+        $this->di->set(self::SERVICE_NAME, $db);
     }
 }

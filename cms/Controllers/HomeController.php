@@ -9,7 +9,6 @@ class HomeController extends CmsController
      */
     public function index()
     {
-        $data = ['name' => 'Sparkqy'];
-        $this->view->render('index', $data);
+        $this->view->render('index');
     }
 }

@@ -1,6 +1,8 @@
-RewriteEngine On
+<IfModule mod_rewrite.c>
+	RewriteEngine On
 
-RewriteCond %{REQUST_FILENAME} !-d
-RewriteCond %{REQUST_FILENAME} !-f
+	RewriteCond %{SCRIPT_FILENAME} !-d
+	RewriteCond %{SCRIPT_FILENAME} !-f
 
-RewriteRule ^(.*)$ index.php [L,QSA]
+	RewriteRule ^(.*)$ index.php [PT,L]
+</IfModule>

@@ -3,6 +3,7 @@
 namespace src\Core\Database;
 
 use PDO;
+use src\Core\Config\Config;
 use src\Exceptions\DbException;
 
 class Db
@@ -12,6 +13,9 @@ class Db
      */
     private $pdo;
 
+    /**
+     * @var self
+     */
     private static $instance;
 
     /**
@@ -23,14 +27,19 @@ class Db
         $this->connect();
     }
 
+    private function __clone() {}
+
+    private function __wakeup() {}
+
     /**
-     * @throws DbException
      * @return void
+     * @throws \Exception
+     * @throws DbException
      */
     private function connect(): void
     {
         try {
-            $options = require_once __DIR__. '/../../Config/db_options.php';
+            $options = Config::file('db_options');
 
             $this->pdo = new PDO(
                 'mysql:host=' . $options['host'] . ';dbname=' . $options['db_name'],

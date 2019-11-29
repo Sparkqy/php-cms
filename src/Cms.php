@@ -36,7 +36,7 @@ class Cms
     public function run()
     {
         try {
-            require_once __DIR__ . '/../cms/routes.php';
+            require_once __DIR__ . '/../' . ENV . '/routes.php';
 
             $dispatchedRoute = $this->router->dispatch(Url::getRequestMethod(), Url::getUrl());
 
@@ -45,7 +45,7 @@ class Cms
             }
 
             list($class, $action) = explode('@', $dispatchedRoute->getController(), 2);
-            $controller = 'cms\\Controllers\\' . $class;
+            $controller = ENV . '\\Controllers\\' . $class;
             $parameters = $dispatchedRoute->getParameters();
 
             call_user_func_array([new $controller($this->di), $action], $parameters);

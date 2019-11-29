@@ -2,34 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cefba261-6f53-4405-ae3c-1d905b1bdcd6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/composerJson.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cms/Controllers/CmsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cms/Controllers/ErrorsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cms/Controllers/HomeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cms/Controllers/NewsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cms/routes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/themes/default/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Core/Router/DispatchedRoute.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Core/Router/UrlDispatcher.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Core/Template/View.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Helpers/Url.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/View/ViewProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/sparky.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/Controllers/AdminController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/Controllers/DashboardController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/Controllers/ErrorsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/Controllers/PagesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/Controllers/PostsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/Controllers/SettingsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/configs/db_options.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/configs/main.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/routes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/configs/db_options.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/themes/default/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/themes/default/header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/themes/default/sidebar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Core/Auth/Auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Core/Auth/AuthInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Core/Config/Config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Core/Request/Request.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Core/Template/Theme.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Helpers/Cookie.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Helpers/Debug.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/Config/ConfigProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/Request/RequestProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php-cms.loc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php-cms.loc.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/cms/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/cms/routes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/themes/default/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/content/themes/default/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cms.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cms.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Config/services.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Config/db_options.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Config/error_display_options.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/configs/error_display_options.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/configs/services.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Core/Database/Db.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Database/Db.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Router/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Router/Router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Database/DatabaseProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Database/DatabaseProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Router/RouterProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Router/RouterProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Template/View.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Template/View.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Helpers/Url.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers/Url.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/bootstrap.php" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,27 +68,41 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../laravel" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/admin/assets/css" />
+      <recent name="$PROJECT_DIR$/admin/assets" />
+      <recent name="$PROJECT_DIR$/admin/Views/auth" />
+      <recent name="$PROJECT_DIR$/admin/Views" />
+      <recent name="$PROJECT_DIR$/admin" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/admin" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -95,7 +124,22 @@
       <workItem from="1573945792987" duration="12000" />
       <workItem from="1574010072128" duration="2538000" />
       <workItem from="1574026467083" duration="4328000" />
-      <workItem from="1574074300726" duration="16703000" />
+      <workItem from="1574074300726" duration="16930000" />
+      <workItem from="1574164364089" duration="692000" />
+      <workItem from="1574331860594" duration="150000" />
+      <workItem from="1574332023976" duration="1622000" />
+      <workItem from="1574334083776" duration="4582000" />
+      <workItem from="1574376466602" duration="4511000" />
+      <workItem from="1574442354452" duration="6435000" />
+      <workItem from="1574513435466" duration="3509000" />
+      <workItem from="1574608675036" duration="539000" />
+      <workItem from="1574624210272" duration="598000" />
+      <workItem from="1574774564822" duration="9583000" />
+      <workItem from="1574807448558" duration="137000" />
+      <workItem from="1574955995559" duration="31000" />
+      <workItem from="1574956041885" duration="679000" />
+      <workItem from="1574958097608" duration="100000" />
+      <workItem from="1574986626398" duration="2755000" />
     </task>
     <servers />
   </component>
@@ -114,5 +158,31 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="278" y="34" width="800" height="677" key="#Notifications" timestamp="1574956009670">
+      <screen x="0" y="25" width="1366" height="698" />
+    </state>
+    <state x="278" y="34" width="800" height="677" key="#Notifications/0.25.1366.698@0.25.1366.698" timestamp="1574956009670" />
+    <state x="366" y="104" width="624" height="538" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1574956019183">
+      <screen x="0" y="25" width="1366" height="698" />
+    </state>
+    <state x="366" y="104" width="624" height="538" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.25.1366.698@0.25.1366.698" timestamp="1574956019183" />
+    <state x="466" y="131" width="424" height="484" key="FileChooserDialogImpl" timestamp="1574958190011">
+      <screen x="0" y="25" width="1366" height="698" />
+    </state>
+    <state x="466" y="131" width="424" height="484" key="FileChooserDialogImpl/0.25.1366.698@0.25.1366.698" timestamp="1574958190011" />
+    <state x="446" y="192" width="492" height="361" key="NewPhpClassDialog" timestamp="1574986967534">
+      <screen x="0" y="25" width="1366" height="698" />
+    </state>
+    <state x="446" y="192" width="492" height="361" key="NewPhpClassDialog/0.25.1366.698@0.25.1366.698" timestamp="1574986967534" />
+    <state x="187" y="25" width="982" height="698" key="SettingsEditor" timestamp="1574986660617">
+      <screen x="0" y="25" width="1366" height="698" />
+    </state>
+    <state x="187" y="25" width="982" height="698" key="SettingsEditor/0.25.1366.698@0.25.1366.698" timestamp="1574986660617" />
+    <state x="346" y="44" width="672" height="678" key="search.everywhere.popup" timestamp="1574988616952">
+      <screen x="0" y="25" width="1366" height="698" />
+    </state>
+    <state x="346" y="44" width="672" height="678" key="search.everywhere.popup/0.25.1366.698@0.25.1366.698" timestamp="1574988616952" />
   </component>
 </project>

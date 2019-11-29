@@ -2,6 +2,8 @@
 
 namespace src\Helpers;
 
+use src\Core\Router\Router;
+
 class Url
 {
     /**
@@ -37,5 +39,15 @@ class Url
         $position = strpos($url, '?');
 
         return ($position) ? substr($url, 0, $position) : $url;
+    }
+
+    /**
+     * @return string
+     */
+    public static function getEnvironment(): string
+    {
+        $env = explode('/', $_SERVER['REQUEST_URI']);
+
+        return ($env[1] === 'admin') ? 'admin' : 'cms';
     }
 }

@@ -1,6 +1,4 @@
-<h1>HomeController@index</h1>
-<p>Index template</p>
-Variables from render method:
-<ol>
-    <li><?= $name ?></li>
-</ol>
+<?php $this->theme->header(); ?>
+<div style="text-align: center; width: 100%;">
+    <p>HomeController@index</p>
+</div>

@@ -11,37 +11,41 @@ class Auth implements AuthInterface
      */
     protected $isAuthorized = false;
 
-    protected $user;
+    /**
+     * @var null|string
+     */
+    protected $user_hash;
 
     /**
      * @return bool
      */
-    public function isAuthorized()
+    public function isAuthorized(): bool
     {
         return $this->isAuthorized;
     }
 
-    public function user()
+    /**
+     * @return string|null
+     */
+    public function userHash(): ?string
     {
-        return $this->user;
+        return Cookie::get('auth_userHash');
     }
 
     /**
-     * @param $user
+     * @param string $hash
      * @return bool
      */
-    public function authorize($user): bool
+    public function authorize(string $hash): bool
     {
-        if (is_null($user)) {
-            Cookie::set('auth.user', null);
+        if (is_null($hash)) {
+            Cookie::set('auth_userHash', null);
 
             return false;
         }
 
-        Cookie::set('auth.isAuthorized', true);
-        Cookie::set('auth.user', $user);
-        $this->isAuthorized = true;
-        $this->user = $user;
+        Cookie::set('auth_isAuthorized', true);
+        Cookie::set('auth_userHash', $hash);
 
         return true;
     }
@@ -51,10 +55,8 @@ class Auth implements AuthInterface
      */
     public function unauthorize(): void
     {
-        Cookie::unset('auth.isAuthorized');
-        Cookie::unset('auth.user');
-        $this->isAuthorized = false;
-        $this->user = null;
+        Cookie::unset('auth_isAuthorized');
+        Cookie::unset('auth_userHash');
     }
 
     /**
@@ -63,6 +65,6 @@ class Auth implements AuthInterface
      */
     public static function encryptPassword(string $password): string
     {
-        return password_hash($password, PASSWORD_BCRYPT);
+        return password_hash($password, PASSWORD_DEFAULT);
     }
 }

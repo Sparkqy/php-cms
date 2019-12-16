@@ -6,20 +6,20 @@ class Cookie
 {
     /**
      * @param string $key
-     * @param $value
+     * @param string $value
      * @param int $time
      * @return void
      */
-    public static function set(string $key, $value, $time = 31536000): void
+    public static function set(string $key, string $value, $time = 31536000): void
     {
         setcookie($key, $value, time() + $time, '/');
     }
 
     /**
      * @param string $key
-     * @return mixed|null
+     * @return string|null
      */
-    public static function get(string $key)
+    public static function get(string $key): ?string
     {
         return $_COOKIE[$key] ?? null;
     }
@@ -34,7 +34,7 @@ class Cookie
             return false;
         }
 
-        self::set($key, '', -3600);
+        self::set($key, '', time() - 3600);
         unset($_COOKIE[$key]);
 
         return true;

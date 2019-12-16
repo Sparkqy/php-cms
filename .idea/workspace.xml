@@ -2,47 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cefba261-6f53-4405-ae3c-1d905b1bdcd6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/sparky.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/Controllers/AdminController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/Controllers/DashboardController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/Controllers/ErrorsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/Controllers/PagesController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/Controllers/PostsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/Controllers/SettingsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/configs/db_options.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/configs/main.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/routes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cms/configs/db_options.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/themes/default/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/themes/default/header.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/themes/default/sidebar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Core/Auth/Auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Core/Auth/AuthInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Core/Config/Config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Core/Request/Request.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Core/Template/Theme.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Helpers/Cookie.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Helpers/Debug.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/Config/ConfigProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/Request/RequestProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php-cms.loc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php-cms.loc.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/Controllers/Auth/LogoutController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Core/Database/QueryBuilder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exceptions/DIContainerException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Helpers/Session.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/cms/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/cms/routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/themes/default/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/content/themes/default/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/Controllers/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/Views/auth/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/Views/auth/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/Views/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/Views/dashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/routes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cms.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cms.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Config/db_options.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Config/error_display_options.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/configs/error_display_options.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/configs/services.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Auth/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Auth/Auth.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Core/Database/Db.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Database/Db.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Template/View.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Template/View.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Helpers/Url.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers/Url.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Router/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Router/Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DI/DI.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DI/DI.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Helpers/Cookie.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers/Cookie.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/bootstrap.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +30,13 @@
     <execution>
       <executable path="composer" />
     </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -78,6 +60,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../laravel" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="Errors" />
@@ -140,6 +123,14 @@
       <workItem from="1574956041885" duration="679000" />
       <workItem from="1574958097608" duration="100000" />
       <workItem from="1574986626398" duration="2755000" />
+      <workItem from="1575066438400" duration="495000" />
+      <workItem from="1575128155880" duration="9424000" />
+      <workItem from="1575211369852" duration="4091000" />
+      <workItem from="1575488083928" duration="174000" />
+      <workItem from="1575488270057" duration="737000" />
+      <workItem from="1575494142651" duration="2621000" />
+      <workItem from="1575667992534" duration="9981000" />
+      <workItem from="1576497654936" duration="1953000" />
     </task>
     <servers />
   </component>
@@ -164,25 +155,36 @@
       <screen x="0" y="25" width="1366" height="698" />
     </state>
     <state x="278" y="34" width="800" height="677" key="#Notifications/0.25.1366.698@0.25.1366.698" timestamp="1574956009670" />
-    <state x="366" y="104" width="624" height="538" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1574956019183">
-      <screen x="0" y="25" width="1366" height="698" />
+    <state x="514" y="139" width="624" height="538" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1575488255194">
+      <screen x="0" y="25" width="1920" height="1009" />
     </state>
     <state x="366" y="104" width="624" height="538" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.25.1366.698@0.25.1366.698" timestamp="1574956019183" />
+    <state x="514" y="139" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.25.1920.1009@0.25.1920.1009" timestamp="1575488255194" />
     <state x="466" y="131" width="424" height="484" key="FileChooserDialogImpl" timestamp="1574958190011">
       <screen x="0" y="25" width="1366" height="698" />
     </state>
     <state x="466" y="131" width="424" height="484" key="FileChooserDialogImpl/0.25.1366.698@0.25.1366.698" timestamp="1574958190011" />
-    <state x="446" y="192" width="492" height="361" key="NewPhpClassDialog" timestamp="1574986967534">
-      <screen x="0" y="25" width="1366" height="698" />
+    <state x="391" y="258" width="450" height="369" key="NewPhpClassDialog" timestamp="1576497757558">
+      <screen x="0" y="25" width="1366" height="697" />
     </state>
+    <state x="391" y="258" width="450" height="369" key="NewPhpClassDialog/0.25.1366.697@0.25.1366.697" timestamp="1576497757558" />
     <state x="446" y="192" width="492" height="361" key="NewPhpClassDialog/0.25.1366.698@0.25.1366.698" timestamp="1574986967534" />
+    <state x="384" y="481" width="506" height="533" key="NewPhpClassDialog/0.25.1920.1009@0.25.1920.1009" timestamp="1575669449442" />
+    <state x="657" y="340" width="585" height="368" key="NewPhpClassDialog/0.25.3286.697@0.25.3286.697" timestamp="1575146700151" />
     <state x="187" y="25" width="982" height="698" key="SettingsEditor" timestamp="1574986660617">
       <screen x="0" y="25" width="1366" height="698" />
     </state>
     <state x="187" y="25" width="982" height="698" key="SettingsEditor/0.25.1366.698@0.25.1366.698" timestamp="1574986660617" />
-    <state x="346" y="44" width="672" height="678" key="search.everywhere.popup" timestamp="1574988616952">
-      <screen x="0" y="25" width="1366" height="698" />
+    <state x="636" y="141" width="647" height="777" key="find.popup" timestamp="1575672093637">
+      <screen x="0" y="25" width="1920" height="1009" />
     </state>
+    <state x="636" y="141" width="647" height="777" key="find.popup/0.25.1920.1009@0.25.1920.1009" timestamp="1575672093637" />
+    <state x="246" y="229" width="672" height="679" key="search.everywhere.popup" timestamp="1576497964971">
+      <screen x="0" y="25" width="1366" height="697" />
+    </state>
+    <state x="246" y="229" width="672" height="679" key="search.everywhere.popup/0.25.1366.697@0.25.1366.697" timestamp="1576497964971" />
     <state x="346" y="44" width="672" height="678" key="search.everywhere.popup/0.25.1366.698@0.25.1366.698" timestamp="1574988616952" />
+    <state x="346" y="320" width="672" height="982" key="search.everywhere.popup/0.25.1920.1009@0.25.1920.1009" timestamp="1575668835742" />
+    <state x="593" y="229" width="799" height="678" key="search.everywhere.popup/0.25.3286.697@0.25.3286.697" timestamp="1575146629207" />
   </component>
 </project>

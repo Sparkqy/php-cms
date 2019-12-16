@@ -38,9 +38,9 @@ class Router
     public function add(string $name, string $pattern, string $controller, string $method = 'GET'): void
     {
         $this->routes[$name] = [
-            'method' => $method,
             'pattern' => $pattern,
             'controller' => $controller,
+            'method' => $method,
         ];
     }
 

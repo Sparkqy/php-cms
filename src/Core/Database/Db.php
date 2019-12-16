@@ -46,10 +46,10 @@ class Db
                 $options['user'],
                 $options['password'],
             );
-
+            $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $this->pdo->exec('SET NAMES UTF8');
         } catch (\PDOException $e) {
-            throw new DbException('Database connection error occurred: ' . $e->getMessage());
+            throw new DbException('Database error occurred: ' . $e->getMessage());
         }
     }
 
@@ -71,7 +71,7 @@ class Db
      * @param array $params
      * @return array|null
      */
-    public function query(string $query, $params = []): ?array
+    public function querySql(string $query, $params = []): ?array
     {
         $sth = $this->pdo->prepare($query);
         $result = $sth->execute($params);
@@ -80,6 +80,8 @@ class Db
             return null;
         }
 
-        return $sth->fetchAll(PDO::FETCH_ASSOC);
+        $result = $sth->fetchAll(PDO::FETCH_ASSOC);
+
+        return !empty($result) ? $result : null;
     }
 }

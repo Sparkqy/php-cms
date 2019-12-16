@@ -8,6 +8,7 @@ use src\Services\AbstractProvider;
 require_once __DIR__ . '/../vendor/autoload.php';
 require __DIR__ . '/configs/error_display_options.php';
 
+session_start();
 define('ENV', Url::getEnvironment());
 
 try {
@@ -23,10 +24,8 @@ try {
 
     $cms = new Cms($di);
     $cms->run();
-} catch (\src\Exceptions\DbException $e) {
-    echo $e->getMessage();
-    exit();
-} catch (Exception $e) {
-    echo $e->getMessage();
+} catch (\src\Exceptions\DbException | Exception | \src\Exceptions\DIContainerException $e) {
+    http_response_code(404);
+    echo 'Fatal error: ' . $e->getMessage();
     exit();
 }

@@ -5,6 +5,7 @@ namespace src;
 use src\Core\Router\DispatchedRoute;
 use src\Core\Router\Router;
 use src\DI\DI;
+use src\Exceptions\DIContainerException;
 use src\Helpers\Url;
 use src\Services\Router\RouterProvider;
 
@@ -23,6 +24,7 @@ class Cms
     /**
      * App constructor.
      * @param DI $di
+     * @throws DIContainerException
      */
     public function __construct(DI $di)
     {
@@ -49,8 +51,9 @@ class Cms
             $parameters = $dispatchedRoute->getParameters();
 
             call_user_func_array([new $controller($this->di), $action], $parameters);
-        } catch (\Exception $e) {
-            echo $e->getMessage();
+        } catch (\Exception | DIContainerException $e) {
+            http_response_code(404);
+            echo 'Fatal error: ' . $e->getMessage();
             exit();
         }
     }

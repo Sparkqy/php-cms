@@ -42,7 +42,8 @@ class Db
             $options = Config::file('db_options');
 
             $this->pdo = new PDO(
-                'mysql:host=' . $options['host'] . ';dbname=' . $options['db_name'],
+                'mysql:host=' . $options['host'] .
+                ';dbname=' . $options['db_name'],
                 $options['user'],
                 $options['password'],
             );

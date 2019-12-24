@@ -37,6 +37,7 @@ abstract class Controller
     /**
      * Controller constructor.
      * @param DI $di
+     * @throws Exceptions\DIContainerException
      */
     public function __construct(DI $di)
     {

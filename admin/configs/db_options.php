@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'host' => 'localhost',
-    'db_name' => 'cms_db',
-    'user' => 'admin',
-    'password' => '369258147',
+    'host' => '127.0.0.1',
+    'db_name' => 'php-cms',
+    'user' => 'root',
+    'password' => 'root',
 ];

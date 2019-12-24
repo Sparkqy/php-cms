@@ -1,0 +1,54 @@
+version: "3.2"
+
+services:
+  webserver:
+    build:
+      context: ./docker/webserver
+    container_name: 'php-cms-webserver'
+    restart: 'always'
+    ports:
+      - "80:80"
+      - "443:443"
+    links:
+      - mysql
+    volumes:
+      - ${DOCUMENT_ROOT-./}:/var/www/html
+      - ${PHP_INI-./docker/configs/php/php.ini}:/usr/local/etc/php/php.ini
+      - ${VHOSTS_DIR-./docker/configs/vhosts}:/etc/apache2/sites-enabled
+      - ${LOG_DIR-./docker/logs/apache2}:/var/log/apache2
+    environment:
+      XDEBUG_CONFIG: "remote_host=host.docker.internal remote_enable=1"
+      PHP_IDE_CONFIG: "serverName=Docker"
+    depends_on:
+      - mysql
+
+  mysql:
+    build: ./docker/mysql
+    container_name: 'php-cms-mysql'
+    restart: 'always'
+    ports:
+      - "3306:3306"
+    volumes:
+      - ${MYSQL_DATA_DIR-./docker/data/mysql}:/var/lib/mysql
+      - ${MYSQL_LOG_DIR-./docker/logs/mysql}:/var/log/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USERNAME}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: 'php-cms-phpmyadmin'
+    links:
+      - mysql
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MYSQL_USER: ${DB_USERNAME}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - '8080:80'
+    volumes:
+      - /sessions

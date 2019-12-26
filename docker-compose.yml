@@ -12,8 +12,8 @@ services:
     links:
       - mysql
     volumes:
-      - ${DOCUMENT_ROOT-./}:/var/www/html
-      - ${PHP_INI-./docker/configs/php/php.ini}:/usr/local/etc/php/php.ini
+      - ${DOCUMENT_ROOT-./}:/var/www/html/php-cms
+      - ${PHP_INI-./docker/configs/php/php.ini}
       - ${VHOSTS_DIR-./docker/configs/vhosts}:/etc/apache2/sites-enabled
       - ${LOG_DIR-./docker/logs/apache2}:/var/log/apache2
     environment:

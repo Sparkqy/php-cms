@@ -4,5 +4,5 @@
 	RewriteCond %{SCRIPT_FILENAME} !-d
 	RewriteCond %{SCRIPT_FILENAME} !-f
 
-	RewriteRule ^(.*)$ index.php [PT,L]
+	RewriteRule ^(.*)$ public/$1 [PT,L]
 </IfModule>

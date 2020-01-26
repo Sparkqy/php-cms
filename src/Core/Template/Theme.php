@@ -101,7 +101,7 @@ class Theme
      */
     private function loadTemplateFile(string $fileName, array $data = [])
     {
-        $file = ROOT . '/content/themes/default/' . $fileName . '.php';
+        $file = $_SERVER['DOCUMENT_ROOT'] . '/../content/themes/default/' . $fileName . '.php';
 
         if (!is_file($file)) {
             throw new \Exception(sprintf('View file %s does not exist', $file));

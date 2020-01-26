@@ -70,15 +70,20 @@ class Db
     /**
      * @param string $query
      * @param array $params
-     * @return array|null
+     * @param bool $fetch
+     * @return array|bool|null
      */
-    public function querySql(string $query, $params = []): ?array
+    public function querySql(string $query, $params = [], bool $fetch = true)
     {
         $sth = $this->pdo->prepare($query);
         $result = $sth->execute($params);
 
         if ($result === false) {
             return null;
+        }
+
+        if (!$fetch) {
+            return true;
         }
 
         $result = $sth->fetchAll(PDO::FETCH_ASSOC);

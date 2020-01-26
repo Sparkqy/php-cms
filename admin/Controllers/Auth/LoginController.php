@@ -6,6 +6,7 @@ use src\Core\Auth\Auth;
 use src\Controller;
 use src\Core\Database\QueryBuilder;
 use src\DI\DI;
+use src\Exceptions\DIContainerException;
 
 class LoginController extends Controller
 {
@@ -17,6 +18,7 @@ class LoginController extends Controller
     /**
      * LoginController constructor.
      * @param DI $di
+     * @throws DIContainerException
      */
     public function __construct(DI $di)
     {
@@ -25,7 +27,7 @@ class LoginController extends Controller
         $this->auth = new Auth();
 
         if (!is_null($this->auth->userHash())) {
-            header('Location: /admin');
+            header('Location: /admin/');
             exit();
         }
     }
@@ -72,10 +74,10 @@ class LoginController extends Controller
         $hashSql = 'UPDATE `users` SET `hash` = :hash WHERE `id` = :id';
         $hashParams = ['hash' => $hash, 'id' => $user['id']];
 
-        $this->db->querySql($hashSql, $hashParams);
+        $this->db->querySql($hashSql, $hashParams, false);
         $this->auth->authorize($hash);
 
-        header('Location: /admin');
+        header('Location: /admin/');
         exit();
     }
 }

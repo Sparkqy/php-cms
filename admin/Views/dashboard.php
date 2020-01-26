@@ -7,8 +7,8 @@
     <meta name="author" content="">
     <title>Admin Panel - Dashboard</title>
 
-    <link href="/admin/assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/admin/assets/css/dashboard.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/dashboard.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
 </head>
 <body>
@@ -55,6 +55,6 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
     <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
-    <script src="/admin/assets/js/bootstrap.min.js"></script>
+    <script src="/public/js/bootstrap.min.js"></script>
 </body>
 </html>

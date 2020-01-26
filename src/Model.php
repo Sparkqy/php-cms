@@ -3,11 +3,10 @@
 namespace src;
 
 use src\Core\Database\Db;
-use src\Core\Request\Request;
-use src\Core\Template\View;
+use src\Core\Database\QueryBuilder;
 use src\DI\DI;
 
-abstract class Controller
+abstract class Model
 {
     /**
      * @var DI
@@ -20,27 +19,17 @@ abstract class Controller
     protected $db;
 
     /**
-     * @var View
-     */
-    protected $view;
-
-    /**
      * @var array
      */
     protected $configs;
 
     /**
-     * @var Request
+     * @var QueryBuilder
      */
-    protected $request;
+    protected $queryBuilder;
 
     /**
-     * @var Load
-     */
-    protected $loader;
-
-    /**
-     * Controller constructor.
+     * Model constructor.
      * @param DI $di
      * @throws Exceptions\DIContainerException
      */
@@ -48,9 +37,7 @@ abstract class Controller
     {
         $this->di = $di;
         $this->db = $this->di->get('db');
-        $this->view = $this->di->get('view');
         $this->configs = $this->di->get('config');
-        $this->request = $this->di->get('request');
-        $this->loader = $this->di->get('loader');
+        $this->queryBuilder = $this->di->get('query_builder');
     }
 }

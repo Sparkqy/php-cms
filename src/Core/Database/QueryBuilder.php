@@ -98,6 +98,18 @@ class QueryBuilder
     }
 
     /**
+     * @param string $table
+     * @return $this
+     */
+    public function insert(string $table): self
+    {
+        $this->reset();
+        $this->sql['insert'] = "INSERT INTO $table ";
+
+        return $this;
+    }
+
+    /**
      * @param array $data
      * @return $this
      */

@@ -1,24 +1,24 @@
 <?php
 
-namespace src\Services\View;
+namespace src\Services\Load;
 
-use src\Core\Template\View;
 use src\Exceptions\DIContainerException;
+use src\Load;
 use src\Services\AbstractProvider;
 
-class ViewProvider extends AbstractProvider
+class LoadProvider extends AbstractProvider
 {
     /**
      * @var string
      */
-    const SERVICE_NAME = 'view';
+    const SERVICE_NAME = 'loader';
 
     /**
      * @throws DIContainerException
      */
     public function init(): void
     {
-        $view = new View();
-        $this->di->set(self::SERVICE_NAME, $view);
+        $loader = new Load($this->di);
+        $this->di->set(self::SERVICE_NAME, $loader);
     }
 }

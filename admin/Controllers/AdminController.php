@@ -5,6 +5,7 @@ namespace admin\Controllers;
 use src\Controller;
 use src\DI\DI;
 use src\Core\Auth\Auth;
+use src\Exceptions\DIContainerException;
 
 class AdminController extends Controller
 {
@@ -16,13 +17,14 @@ class AdminController extends Controller
     /**
      * AdminController constructor.
      * @param DI $di
+     * @throws DIContainerException
      */
     public function __construct(DI $di)
     {
         parent::__construct($di);
 
         $this->auth = new Auth();
-//        $this->checkAuth();
+
         if (is_null($this->auth->userHash())) {
             header('Location: /admin/login');
             exit();

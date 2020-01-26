@@ -2,25 +2,23 @@
 
 namespace src\Services\Database;
 
-use src\Core\Database\Db;
-use src\Exceptions\DbException;
+use src\Core\Database\QueryBuilder;
 use src\Exceptions\DIContainerException;
 use src\Services\AbstractProvider;
 
-class DatabaseProvider extends AbstractProvider
+class QueryBuilderProvider extends AbstractProvider
 {
     /**
      * @var string
      */
-    const SERVICE_NAME = 'db';
+    const SERVICE_NAME = 'query_builder';
 
     /**
      * @throws DIContainerException
-     * @throws DbException
      */
     public function init(): void
     {
-        $db = Db::getInstance();
-        $this->di->set(self::SERVICE_NAME, $db);
+        $queryBuilder = new QueryBuilder();
+        $this->di->set(self::SERVICE_NAME, $queryBuilder);
     }
 }

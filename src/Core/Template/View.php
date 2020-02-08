@@ -5,9 +5,9 @@ namespace src\Core\Template;
 class View
 {
     /**
-     * @var \src\Core\Template\Theme
+     * @var Theme
      */
-    protected $theme;
+    protected Theme $theme;
 
     public function __construct()
     {

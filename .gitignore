@@ -2,3 +2,6 @@ composer.phar
 /vendor/
 /admin/configs/db_options.php
 /cms/configs/db_options.php
+/.idea/
+/docker-compose.yml
+/docker/data

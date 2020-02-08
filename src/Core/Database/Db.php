@@ -2,6 +2,7 @@
 
 namespace src\Core\Database;
 
+use Exception;
 use PDO;
 use src\Core\Config\Config;
 use src\Exceptions\DbException;
@@ -11,7 +12,7 @@ class Db
     /**
      * @var PDO
      */
-    private $pdo;
+    private PDO $pdo;
 
     /**
      * @var self
@@ -28,12 +29,11 @@ class Db
     }
 
     private function __clone() {}
-
     private function __wakeup() {}
 
     /**
      * @return void
-     * @throws \Exception
+     * @throws Exception
      * @throws DbException
      */
     private function connect(): void
@@ -60,7 +60,7 @@ class Db
      */
     public static function getInstance(): self
     {
-        if (is_null(self::$instance)) {
+        if (self::$instance === null) {
             self::$instance = new self();
         }
 
@@ -89,5 +89,13 @@ class Db
         $result = $sth->fetchAll(PDO::FETCH_ASSOC);
 
         return !empty($result) ? $result : null;
+    }
+
+    /**
+     * @return string
+     */
+    public function lastInsertId(): string
+    {
+        return $this->pdo->lastInsertId();
     }
 }

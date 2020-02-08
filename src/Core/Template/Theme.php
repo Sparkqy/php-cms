@@ -8,18 +8,19 @@ class Theme
         'header' => 'header-%s',
         'sidebar' => 'sidebar-%s',
         'footer' => 'footer-%s',
+        'scripts' => 'scripts-%s',
     ];
 
     /**
      * Url of the current theme
      * @var string 
      */
-    public $url = '';
+    public string $url = '';
 
     /**
      * @var array
      */
-    protected $data = [];
+    protected array $data = [];
 
     /**
      * @return array
@@ -67,6 +68,18 @@ class Theme
         }
     }
 
+    public function scripts(string $name = '')
+    {
+        $file = (!empty($name)) ? sprintf(self::FILE_NAME_RULES['scripts'], $name) : 'scripts';
+
+        try {
+            $this->loadTemplateFile($file);
+        } catch (\Exception $e) {
+            echo $e->getMessage();
+            exit();
+        }
+    }
+
     /**
      * @param string $name
      */
@@ -101,7 +114,11 @@ class Theme
      */
     private function loadTemplateFile(string $fileName, array $data = [])
     {
-        $file = $_SERVER['DOCUMENT_ROOT'] . '/../content/themes/default/' . $fileName . '.php';
+        $file = ROOT . '/../content/themes/default/' . $fileName . '.php';
+
+        if (ENV === 'admin') {
+            $file = ROOT . '/../admin/Views/' . $fileName . '.php';
+        }
 
         if (!is_file($file)) {
             throw new \Exception(sprintf('View file %s does not exist', $file));

@@ -38,7 +38,7 @@ class Load
         $namespaceEntity = sprintf(self::MODEL_ENTITY_MASK, ENV, $modelDir, $modelName);
         $namespaceRepository = sprintf(self::MODEL_REPOSITORY_MASK, ENV, $modelDir, $modelName);
 
-        $model->entity = $namespaceEntity;
+        $model->model = new $namespaceEntity($this->di);
         $model->repository = new $namespaceRepository($this->di);
 
         return $model;

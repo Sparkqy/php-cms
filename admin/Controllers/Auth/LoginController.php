@@ -41,14 +41,13 @@ class LoginController extends Controller
     {
         $data = $this->request->post;
         $queryBuilder = new QueryBuilder();
-        $sql = $queryBuilder
-            ->select()
+        $sql = $queryBuilder->select()
             ->from('users')
             ->where('email', $data['email'])
             ->limit(1)
             ->sql();
 
-        $result = $this->db->querySql($sql, $queryBuilder->getWhereValues());
+        $result = $this->db->querySql($sql, $queryBuilder->getValues('where'));
 
         if (is_null($result) || !password_verify($data['password'], $result[0]['password'])) {
             $_SESSION['error'] = [
@@ -61,7 +60,7 @@ class LoginController extends Controller
 
         $user = $result[0];
 
-        if (!$user['role'] === 'admin') {
+        if ($user['role'] !== 'admin') {
             $_SESSION['error'] = [
                 'message' => 'Only admin user can login to the system',
                 'type' => 'alert-danger',
@@ -71,10 +70,12 @@ class LoginController extends Controller
         }
 
         $hash = password_hash($user['id'] . $user['email'] . $user['password'], 1);
-        $hashSql = 'UPDATE `users` SET `hash` = :hash WHERE `id` = :id';
-        $hashParams = ['hash' => $hash, 'id' => $user['id']];
+        $sql = $queryBuilder->update('users')
+            ->set(['hash' => $hash])
+            ->where('id', $user['id'])
+            ->sql();
 
-        $this->db->querySql($hashSql, $hashParams, false);
+        $this->db->querySql($sql, $queryBuilder->getValuesMerged(), false);
         $this->auth->authorize($hash);
 
         header('Location: /admin/');

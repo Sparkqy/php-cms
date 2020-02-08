@@ -50,4 +50,24 @@ class Url
 
         return ($env[1] === 'admin') ? 'admin' : 'cms';
     }
+
+    /**
+     * @param string $location
+     */
+    public static function redirect(string $location): void
+    {
+        header('Location: ' . $location);
+        return;
+    }
+
+    /**
+     * @param string $sessionKey
+     * @param array $sessionValue
+     * @param string $redirectPath
+     */
+    public static function redirectWithFlash(string $sessionKey, array $sessionValue, string $redirectPath): void
+    {
+        Session::set($sessionKey, $sessionValue);
+        self::redirect($redirectPath);
+    }
 }

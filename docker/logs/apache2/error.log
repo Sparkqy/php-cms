@@ -1,115 +1,59 @@
 AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.3. Set the 'ServerName' directive globally to suppress this message
-[Tue Dec 24 15:08:55.721948 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.13 configured -- resuming normal operations
-[Tue Dec 24 15:08:55.722004 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
-[Tue Dec 24 15:38:01.707282 2019] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Sat Feb 01 13:22:42.070268 2020] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.14 configured -- resuming normal operations
+[Sat Feb 01 13:22:42.070334 2020] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sat Feb 01 13:30:05.791089 2020] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.3. Set the 'ServerName' directive globally to suppress this message
+[Sat Feb 01 14:47:22.824984 2020] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.14 configured -- resuming normal operations
+[Sat Feb 01 14:47:22.825738 2020] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sat Feb 01 22:42:38.371336 2020] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
 AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.4. Set the 'ServerName' directive globally to suppress this message
-[Tue Dec 24 15:38:05.762040 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.13 configured -- resuming normal operations
-[Tue Dec 24 15:38:05.763236 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
-[Tue Dec 24 15:44:22.851016 2019] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Sun Feb 02 10:28:13.873856 2020] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.14 configured -- resuming normal operations
+[Sun Feb 02 10:28:13.874602 2020] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sun Feb 02 10:29:04.441098 2020] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
 AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.3. Set the 'ServerName' directive globally to suppress this message
-[Tue Dec 24 15:44:26.183171 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.13 configured -- resuming normal operations
-[Tue Dec 24 15:44:26.184015 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
-[Tue Dec 24 16:16:16.739878 2019] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Sun Feb 02 10:29:17.608888 2020] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.4.2 configured -- resuming normal operations
+[Sun Feb 02 10:29:17.608974 2020] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sun Feb 02 10:35:17.337075 2020] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
 AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.4. Set the 'ServerName' directive globally to suppress this message
-[Tue Dec 24 16:16:19.781003 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.13 configured -- resuming normal operations
-[Tue Dec 24 16:16:19.781909 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
-[Tue Dec 24 16:18:18.441968 2019] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+Failed loading /usr/local/lib/php/extensions/no-debug-non-zts-20180731/xdebug.so:  /usr/local/lib/php/extensions/no-debug-non-zts-20180731/xdebug.so: cannot open shared object file: No such file or directory
+[Sun Feb 02 11:10:25.829050 2020] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.4.2 configured -- resuming normal operations
+[Sun Feb 02 11:10:25.829130 2020] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sun Feb 02 11:54:03.841297 2020] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
 AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.4. Set the 'ServerName' directive globally to suppress this message
-[Tue Dec 24 16:18:21.658304 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.13 configured -- resuming normal operations
-[Tue Dec 24 16:18:21.663827 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
-[Tue Dec 24 16:29:13.231139 2019] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+Failed loading /usr/local/lib/php/extensions/no-debug-non-zts-20180731/xdebug.so:  /usr/local/lib/php/extensions/no-debug-non-zts-20180731/xdebug.so: cannot open shared object file: No such file or directory
+[Sun Feb 02 11:54:05.962453 2020] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.4.2 configured -- resuming normal operations
+[Sun Feb 02 11:54:05.962521 2020] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sun Feb 02 11:56:42.709092 2020] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
 AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.3. Set the 'ServerName' directive globally to suppress this message
-[Thu Dec 26 10:12:49.916148 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.13 configured -- resuming normal operations
-[Thu Dec 26 10:12:49.917590 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
-[Thu Dec 26 10:39:25.183786 2019] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+Cannot load Xdebug - it was already loaded
+[Sun Feb 02 11:57:06.172668 2020] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.4.2 configured -- resuming normal operations
+[Sun Feb 02 11:57:06.172751 2020] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
 AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.3. Set the 'ServerName' directive globally to suppress this message
-[Thu Dec 26 10:39:28.507713 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.13 configured -- resuming normal operations
-[Thu Dec 26 10:39:28.508361 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
-[Thu Dec 26 10:47:47.259393 2019] [autoindex:error] [pid 17] [client 172.18.0.1:35284] AH01276: Cannot serve directory /var/www/html/php-cms/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
-[Thu Dec 26 10:48:09.197975 2019] [autoindex:error] [pid 19] [client 172.18.0.1:35286] AH01276: Cannot serve directory /var/www/html/php-cms/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
-[Thu Dec 26 10:48:30.127121 2019] [autoindex:error] [pid 21] [client 172.18.0.1:35290] AH01276: Cannot serve directory /var/www/html/php-cms/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
-[Thu Dec 26 10:48:32.866200 2019] [autoindex:error] [pid 21] [client 172.18.0.1:35290] AH01276: Cannot serve directory /var/www/html/php-cms/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
-[Thu Dec 26 10:48:35.678437 2019] [autoindex:error] [pid 21] [client 172.18.0.1:35290] AH01276: Cannot serve directory /var/www/html/php-cms/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
-[Thu Dec 26 10:49:25.036192 2019] [autoindex:error] [pid 18] [client 172.18.0.1:35294] AH01276: Cannot serve directory /var/www/html/php-cms/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
-[Thu Dec 26 10:49:25.711674 2019] [autoindex:error] [pid 18] [client 172.18.0.1:35294] AH01276: Cannot serve directory /var/www/html/php-cms/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
-[Thu Dec 26 10:50:14.354362 2019] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
-AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.3. Set the 'ServerName' directive globally to suppress this message
-[Thu Dec 26 10:50:18.736788 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.13 configured -- resuming normal operations
-[Thu Dec 26 10:50:18.737526 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
-[Thu Dec 26 10:50:22.936161 2019] [autoindex:error] [pid 16] [client 172.18.0.1:35298] AH01276: Cannot serve directory /var/www/html/php-cms/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
-[Thu Dec 26 10:50:23.499485 2019] [autoindex:error] [pid 16] [client 172.18.0.1:35298] AH01276: Cannot serve directory /var/www/html/php-cms/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
-[Thu Dec 26 10:50:24.054118 2019] [autoindex:error] [pid 16] [client 172.18.0.1:35298] AH01276: Cannot serve directory /var/www/html/php-cms/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
-[Thu Dec 26 10:52:06.090089 2019] [autoindex:error] [pid 18] [client 172.18.0.1:35302] AH01276: Cannot serve directory /var/www/html/php-cms/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
-[Thu Dec 26 10:52:59.997407 2019] [autoindex:error] [pid 20] [client 172.18.0.1:35306] AH01276: Cannot serve directory /var/www/html/php-cms/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
-[Thu Dec 26 10:53:00.566176 2019] [autoindex:error] [pid 20] [client 172.18.0.1:35306] AH01276: Cannot serve directory /var/www/html/php-cms/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
-[Thu Dec 26 10:53:00.975878 2019] [autoindex:error] [pid 20] [client 172.18.0.1:35306] AH01276: Cannot serve directory /var/www/html/php-cms/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
-[Thu Dec 26 10:53:01.192502 2019] [autoindex:error] [pid 20] [client 172.18.0.1:35306] AH01276: Cannot serve directory /var/www/html/php-cms/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
-[Thu Dec 26 10:53:01.389789 2019] [autoindex:error] [pid 20] [client 172.18.0.1:35306] AH01276: Cannot serve directory /var/www/html/php-cms/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
-[Thu Dec 26 10:53:01.585034 2019] [autoindex:error] [pid 20] [client 172.18.0.1:35306] AH01276: Cannot serve directory /var/www/html/php-cms/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
-[Thu Dec 26 10:53:08.291206 2019] [autoindex:error] [pid 21] [client 172.18.0.1:35308] AH01276: Cannot serve directory /var/www/html/php-cms/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
-[Thu Dec 26 10:53:08.933050 2019] [autoindex:error] [pid 21] [client 172.18.0.1:35308] AH01276: Cannot serve directory /var/www/html/php-cms/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
-[Thu Dec 26 10:53:16.660000 2019] [autoindex:error] [pid 21] [client 172.18.0.1:35308] AH01276: Cannot serve directory /var/www/html/php-cms/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
-[Thu Dec 26 10:53:31.391601 2019] [autoindex:error] [pid 17] [client 172.18.0.1:35314] AH01276: Cannot serve directory /var/www/html/php-cms/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
-[Thu Dec 26 10:53:35.806339 2019] [autoindex:error] [pid 17] [client 172.18.0.1:35314] AH01276: Cannot serve directory /var/www/html/php-cms/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
-[Thu Dec 26 10:53:48.943359 2019] [autoindex:error] [pid 19] [client 172.18.0.1:35318] AH01276: Cannot serve directory /var/www/html/php-cms/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
-[Thu Dec 26 10:54:07.893622 2019] [autoindex:error] [pid 21] [client 172.18.0.1:35322] AH01276: Cannot serve directory /var/www/html/php-cms/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
-[Thu Dec 26 10:58:37.857921 2019] [autoindex:error] [pid 17] [client 172.18.0.1:35330] AH01276: Cannot serve directory /var/www/html/php-cms/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
-[Thu Dec 26 10:59:13.349684 2019] [autoindex:error] [pid 21] [client 172.18.0.1:35340] AH01276: Cannot serve directory /var/www/html/php-cms/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
-[Thu Dec 26 10:59:22.129170 2019] [autoindex:error] [pid 16] [client 172.18.0.1:35342] AH01276: Cannot serve directory /var/www/html/php-cms/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
-[Thu Dec 26 10:59:22.974398 2019] [autoindex:error] [pid 16] [client 172.18.0.1:35342] AH01276: Cannot serve directory /var/www/html/php-cms/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
-[Thu Dec 26 10:59:23.472543 2019] [autoindex:error] [pid 16] [client 172.18.0.1:35342] AH01276: Cannot serve directory /var/www/html/php-cms/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
-[Thu Dec 26 10:59:23.673120 2019] [autoindex:error] [pid 16] [client 172.18.0.1:35342] AH01276: Cannot serve directory /var/www/html/php-cms/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
-[Thu Dec 26 10:59:23.848248 2019] [autoindex:error] [pid 16] [client 172.18.0.1:35342] AH01276: Cannot serve directory /var/www/html/php-cms/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
-[Thu Dec 26 10:59:48.622195 2019] [autoindex:error] [pid 18] [client 172.18.0.1:35346] AH01276: Cannot serve directory /var/www/html/php-cms/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
-[Thu Dec 26 10:59:49.408889 2019] [autoindex:error] [pid 18] [client 172.18.0.1:35346] AH01276: Cannot serve directory /var/www/html/php-cms/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
-[Thu Dec 26 11:00:55.441970 2019] [autoindex:error] [pid 20] [client 172.18.0.1:35350] AH01276: Cannot serve directory /var/www/html/php-cms/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
-[Thu Dec 26 11:00:56.033248 2019] [autoindex:error] [pid 20] [client 172.18.0.1:35350] AH01276: Cannot serve directory /var/www/html/php-cms/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
-[Thu Dec 26 11:00:56.358524 2019] [autoindex:error] [pid 20] [client 172.18.0.1:35350] AH01276: Cannot serve directory /var/www/html/php-cms/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
-[Thu Dec 26 11:00:56.577899 2019] [autoindex:error] [pid 20] [client 172.18.0.1:35350] AH01276: Cannot serve directory /var/www/html/php-cms/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
-[Thu Dec 26 11:01:29.740422 2019] [autoindex:error] [pid 16] [client 172.18.0.1:35354] AH01276: Cannot serve directory /var/www/html/php-cms/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
-[Thu Dec 26 11:07:53.647389 2019] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
-AH00112: Warning: DocumentRoot [/var/www/html/php-cms/public] does not exist
-AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.3. Set the 'ServerName' directive globally to suppress this message
-[Thu Dec 26 11:07:56.868710 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.13 configured -- resuming normal operations
-[Thu Dec 26 11:07:56.869334 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
-[Thu Dec 26 11:10:03.826738 2019] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
-AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.3. Set the 'ServerName' directive globally to suppress this message
-[Thu Dec 26 11:10:06.862900 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.13 configured -- resuming normal operations
-[Thu Dec 26 11:10:06.863512 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
-[Thu Dec 26 12:07:01.655078 2019] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
-AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.3. Set the 'ServerName' directive globally to suppress this message
-[Thu Dec 26 12:12:31.967523 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.13 configured -- resuming normal operations
-[Thu Dec 26 12:12:31.968103 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
-[Thu Dec 26 12:15:40.107482 2019] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+Cannot load Xdebug - it was already loaded
+[Mon Feb 03 08:45:22.323368 2020] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.4.2 configured -- resuming normal operations
+[Mon Feb 03 08:45:22.323444 2020] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Mon Feb 03 08:51:01.077033 2020] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
 AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.4. Set the 'ServerName' directive globally to suppress this message
-[Thu Dec 26 12:16:10.149002 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.13 configured -- resuming normal operations
-[Thu Dec 26 12:16:10.149062 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
-[Thu Dec 26 12:46:30.166997 2019] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+Cannot load Xdebug - it was already loaded
+[Tue Feb 04 19:48:44.749944 2020] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.4.2 configured -- resuming normal operations
+[Tue Feb 04 19:48:44.751121 2020] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Tue Feb 04 20:51:13.086202 2020] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
 AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.4. Set the 'ServerName' directive globally to suppress this message
-[Thu Dec 26 12:46:44.062077 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.13 configured -- resuming normal operations
-[Thu Dec 26 12:46:44.063733 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
-[Thu Dec 26 12:54:55.980832 2019] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
-AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.4. Set the 'ServerName' directive globally to suppress this message
-[Thu Dec 26 12:55:23.753420 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.13 configured -- resuming normal operations
-[Thu Dec 26 12:55:23.754057 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
-[Thu Dec 26 12:58:03.944893 2019] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+Cannot load Xdebug - it was already loaded
+[Wed Feb 05 01:54:47.141024 2020] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.4.2 configured -- resuming normal operations
+[Wed Feb 05 01:54:47.141077 2020] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Wed Feb 05 03:35:09.969049 2020] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
 AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.3. Set the 'ServerName' directive globally to suppress this message
-[Thu Dec 26 12:58:07.017080 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.13 configured -- resuming normal operations
-[Thu Dec 26 12:58:07.025088 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
-[Thu Dec 26 12:59:04.896469 2019] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+Cannot load Xdebug - it was already loaded
+[Thu Feb 06 19:20:03.312680 2020] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.4.2 configured -- resuming normal operations
+[Thu Feb 06 19:20:03.313412 2020] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Feb 06 20:09:59.252507 2020] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
 AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.3. Set the 'ServerName' directive globally to suppress this message
-[Thu Dec 26 12:59:08.034976 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.13 configured -- resuming normal operations
-[Thu Dec 26 12:59:08.035481 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
-[Thu Dec 26 13:01:44.309027 2019] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+Cannot load Xdebug - it was already loaded
+[Fri Feb 07 17:12:18.467083 2020] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.4.2 configured -- resuming normal operations
+[Fri Feb 07 17:12:18.467802 2020] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Fri Feb 07 21:08:52.613223 2020] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
 AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.4. Set the 'ServerName' directive globally to suppress this message
-[Thu Dec 26 13:02:07.462386 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.13 configured -- resuming normal operations
-[Thu Dec 26 13:02:07.463217 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
-[Thu Dec 26 13:05:50.424819 2019] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
-AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.4. Set the 'ServerName' directive globally to suppress this message
-[Thu Dec 26 13:05:59.655231 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.13 configured -- resuming normal operations
-[Thu Dec 26 13:05:59.655991 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
-[Thu Dec 26 13:06:50.901637 2019] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
-AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.3. Set the 'ServerName' directive globally to suppress this message
-[Thu Dec 26 13:07:09.023910 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.13 configured -- resuming normal operations
-[Thu Dec 26 13:07:09.024423 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
-[Thu Dec 26 13:07:43.444642 2019] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+Cannot load Xdebug - it was already loaded
+[Sat Feb 08 18:42:56.030225 2020] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.4.2 configured -- resuming normal operations
+[Sat Feb 08 18:42:56.030299 2020] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'

@@ -11,22 +11,27 @@ abstract class Model
     /**
      * @var DI
      */
-    protected $di;
+    protected DI $di;
 
     /**
      * @var Db
      */
-    protected $db;
+    protected Db $db;
 
     /**
      * @var array
      */
-    protected $configs;
+    protected array $configs;
 
     /**
      * @var QueryBuilder
      */
-    protected $queryBuilder;
+    protected QueryBuilder $queryBuilder;
+
+    /**
+     * @var Load
+     */
+    protected Load $loader;
 
     /**
      * Model constructor.
@@ -39,5 +44,6 @@ abstract class Model
         $this->db = $this->di->get('db');
         $this->configs = $this->di->get('config');
         $this->queryBuilder = $this->di->get('query_builder');
+        $this->loader = $this->di->get('loader');
     }
 }

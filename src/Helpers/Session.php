@@ -6,6 +6,15 @@ class Session
 {
     /**
      * @param string $key
+     * @param array $value
+     */
+    public static function set(string $key, array $value): void
+    {
+        $_SESSION[$key] = $value;
+    }
+
+    /**
+     * @param string $key
      * @param string $property
      * @return mixed|null
      */

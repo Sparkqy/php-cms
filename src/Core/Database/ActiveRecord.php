@@ -5,9 +5,10 @@ namespace src\Core\Database;
 use ReflectionClass;
 use ReflectionException;
 use ReflectionProperty;
+use src\DI\DI;
 use src\Exceptions\DIContainerException;
 
-trait ActiveRecord
+abstract class ActiveRecord
 {
     /**
      * @var Db
@@ -21,18 +22,13 @@ trait ActiveRecord
 
     /**
      * ActiveRecord constructor.
-     * @param int $id
+     * @param DI $di
      * @throws DIContainerException
      */
-    public function __construct(int $id = 0)
+    public function __construct(DI $di)
     {
-        global $di;
         $this->db = $di->get('db');
         $this->queryBuilder = $di->get('query_builder');
-
-        if ($id) {
-            $this->id = $id;
-        }
     }
 
     /**
@@ -44,16 +40,30 @@ trait ActiveRecord
     }
 
     /**
+     * @param int $id
+     * @return $this
+     */
+    public function setId(int $id): self
+    {
+        if ($id < 0) {
+            throw new \InvalidArgumentException('Id column value cannot equal less than zero');
+        }
+
+        $this->id = $id ? $id : null;
+
+        return $this;
+    }
+
+    /**
      * @throws ReflectionException
      */
-    public function save(): void
+    public function save(): string
     {
         $properties = $this->getIssetProperties();
 
         try {
             if (isset($this->id)) {
-                $queryBuilder = $this->queryBuilder
-                    ->update($this->getTable())
+                $queryBuilder = $this->queryBuilder->update($this->getTable())
                     ->set($properties)
                     ->where('id', $this->id);
                 $this->db->querySql($queryBuilder->sql(), $queryBuilder->getValues()['set'], false);
@@ -61,6 +71,8 @@ trait ActiveRecord
                 $queryBuilder = $this->queryBuilder->insert($this->getTable())->set($properties);
                 $this->db->querySql($queryBuilder->sql(), $queryBuilder->getValues()['set'], false);
             }
+
+            return $this->db->lastInsertId();
         } catch (\Exception $e) {
             echo $e->getMessage();
             exit();

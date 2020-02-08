@@ -164,18 +164,31 @@ class QueryBuilder
     }
 
     /**
+     * @param string|null $key
      * @return array
      */
-    public function getValues(): array
+    public function getValues(string $key = null): array
     {
+        if ($key !== null) {
+            return isset($this->values[$key]) ? $this->values[$key] : null;
+        }
+
         return $this->values;
     }
 
     /**
      * @return array
      */
-    public function getWhereValues(): array
+    public function getValuesMerged(): array
     {
-       return isset($this->values['where']) ? $this->values['where'] : [];
+        $valuesMerged = [];
+
+        foreach ($this->values as $values) {
+            foreach ($values as $key => $value) {
+                $valuesMerged[$key] = $value;
+            }
+        }
+
+        return $valuesMerged;
     }
 }

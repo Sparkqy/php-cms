@@ -4,10 +4,8 @@ namespace admin\Models\User;
 
 use src\Core\Database\ActiveRecord;
 
-class User
+class User extends ActiveRecord
 {
-    use ActiveRecord;
-
     /**
      * @var string
      */
@@ -42,12 +40,4 @@ class User
      * @var string
      */
     public $created_at;
-
-    /**
-     * @return string
-     */
-    public function getTable(): string
-    {
-        return $this->table;
-    }
 }

@@ -49,4 +49,39 @@ class PagesController extends AdminController
             'alert-class' => 'alert-success'
         ], '/admin/pages/create');
     }
+
+    /**
+     * @param int $id
+     * @throws DIContainerException
+     */
+    public function edit(int $id)
+    {
+        $this->data['page'] = $this->pageEntity->repository->getById($id);
+
+        if ($this->data['page'] === null) {
+            $errorsController = new ErrorsController($this->di);
+            return $errorsController->show404();
+        }
+
+        $this->view->render('pages/edit', $this->data);
+    }
+
+    /**
+     * @param int $id
+     * @throws DIContainerException
+     */
+    public function update(int $id)
+    {
+        if ($this->pageEntity->repository->getById($id) === null) {
+            $errorsController = new ErrorsController($this->di);
+            return $errorsController->show404();
+        }
+
+        $this->pageEntity->repository->updatePage($id, $this->request->post);
+
+        Url::redirectWithFlash('success', [
+            'message' => 'Page was successfully updated',
+            'alert-class' => 'alert-success'
+        ], '/admin/pages/edit/' . $id);
+    }
 }

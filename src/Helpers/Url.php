@@ -2,7 +2,7 @@
 
 namespace src\Helpers;
 
-use src\Core\Router\Router;
+use admin\Controllers\ErrorsController;
 
 class Url
 {

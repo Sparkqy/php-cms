@@ -2,186 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cefba261-6f53-4405-ae3c-1d905b1bdcd6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php-docker-settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/Models/Page/Page.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/Models/Page/PageRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/Views/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/Views/header.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/Views/pages/create.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/Views/pages/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/Views/scripts.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml.dist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/Views/errors/404.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/Views/pages/edit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/Controllers/AdminController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/Controllers/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/Controllers/DashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/Controllers/ErrorsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/Controllers/ErrorsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/Controllers/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/Controllers/PagesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/Models/User/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/Models/User/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/Views/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/Views/dashboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/configs/db_options.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/configs/db_options.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/Models/Page/PageRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/Models/Page/PageRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/Models/User/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/Models/User/UserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/Views/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/Views/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/Views/pages/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/Views/pages/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/configs/db_options.php" beforeDir="false" afterPath="$PROJECT_DIR$/cms/configs/db_options.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/themes/default/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/content/themes/default/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/themes/default/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/content/themes/default/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/themes/default/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/content/themes/default/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/configs/php/php.ini" beforeDir="false" afterPath="$PROJECT_DIR$/docker/configs/php/php.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/auto.cnf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/auto.cnf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/binlog.000001" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/binlog.000001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/binlog.000002" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/binlog.000002" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/binlog.000003" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/binlog.000004" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/binlog.000005" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/binlog.000006" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/binlog.000007" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/binlog.000008" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/binlog.000009" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/binlog.000010" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/binlog.000011" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/binlog.000012" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/binlog.000013" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/binlog.000014" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/binlog.000015" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/binlog.index" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/binlog.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/ca-key.pem" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/ca-key.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/ca.pem" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/ca.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/client-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/client-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/client-key.pem" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/client-key.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/ib_buffer_pool" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/ib_logfile0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/ibdata1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/mysql.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/mysql.ibd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/mysql/general_log_201.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/general_log_201.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/mysql/slow_log_202.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/mysql/slow_log_202.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/accounts_138.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/accounts_138.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/cond_instances_77.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/cond_instances_77.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/data_lock_waits_154.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/data_lock_waits_154.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/data_locks_153.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/data_locks_153.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_errors_su_132.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_errors_su_132.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_errors_su_133.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_errors_su_133.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_errors_su_134.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_errors_su_134.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_errors_su_135.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_errors_su_135.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_errors_su_136.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_errors_su_136.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_stages_cu_104.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_stages_cu_104.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_stages_hi_105.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_stages_hi_105.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_stages_hi_106.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_stages_hi_106.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_stages_su_107.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_stages_su_107.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_stages_su_108.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_stages_su_108.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_stages_su_109.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_stages_su_109.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_stages_su_110.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_stages_su_110.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_stages_su_111.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_stages_su_111.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_statement_112.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_statement_112.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_statement_113.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_statement_113.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_statement_114.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_statement_114.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_statement_115.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_statement_115.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_statement_116.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_statement_116.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_statement_117.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_statement_117.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_statement_118.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_statement_118.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_statement_119.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_statement_119.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_statement_120.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_statement_120.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_statement_121.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_statement_121.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_statement_122.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_statement_122.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_statement_123.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_statement_123.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_transacti_124.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_transacti_124.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_transacti_125.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_transacti_125.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_transacti_126.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_transacti_126.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_transacti_127.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_transacti_127.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_transacti_128.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_transacti_128.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_transacti_129.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_transacti_129.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_transacti_130.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_transacti_130.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_transacti_131.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_transacti_131.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_waits_cur_78.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_waits_cur_78.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_waits_his_79.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_waits_his_79.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_waits_his_80.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_waits_his_80.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_waits_sum_81.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_waits_sum_81.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_waits_sum_82.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_waits_sum_82.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_waits_sum_83.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_waits_sum_83.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_waits_sum_84.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_waits_sum_84.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_waits_sum_85.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_waits_sum_85.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_waits_sum_86.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/events_waits_sum_86.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/file_instances_87.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/file_instances_87.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/file_summary_by__88.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/file_summary_by__88.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/file_summary_by__89.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/file_summary_by__89.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/global_status_172.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/global_status_172.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/global_variables_175.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/global_variables_175.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/host_cache_90.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/host_cache_90.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/hosts_139.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/hosts_139.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/keyring_keys_145.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/keyring_keys_145.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/log_status_165.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/log_status_165.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/memory_summary_b_147.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/memory_summary_b_147.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/memory_summary_b_148.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/memory_summary_b_148.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/memory_summary_b_149.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/memory_summary_b_149.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/memory_summary_b_150.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/memory_summary_b_150.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/memory_summary_g_146.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/memory_summary_g_146.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/metadata_locks_152.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/metadata_locks_152.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/mutex_instances_91.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/mutex_instances_91.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/objects_summary__92.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/objects_summary__92.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/performance_time_93.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/performance_time_93.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/persisted_variab_178.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/persisted_variab_178.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/prepared_stateme_166.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/prepared_stateme_166.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/replication_appl_158.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/replication_appl_158.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/replication_appl_159.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/replication_appl_159.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/replication_appl_160.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/replication_appl_160.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/replication_appl_161.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/replication_appl_161.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/replication_appl_163.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/replication_appl_163.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/replication_appl_164.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/replication_appl_164.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/replication_conn_155.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/replication_conn_155.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/replication_conn_157.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/replication_conn_157.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/replication_grou_156.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/replication_grou_156.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/replication_grou_162.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/replication_grou_162.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/rwlock_instances_94.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/rwlock_instances_94.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/session_account__144.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/session_account__144.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/session_connect__143.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/session_connect__143.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/session_status_173.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/session_status_173.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/session_variable_176.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/session_variable_176.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/setup_actors_95.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/setup_actors_95.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/setup_consumers_96.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/setup_consumers_96.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/setup_instrument_97.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/setup_instrument_97.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/setup_objects_98.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/setup_objects_98.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/setup_threads_99.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/setup_threads_99.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/socket_instances_140.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/socket_instances_140.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/socket_summary_b_141.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/socket_summary_b_141.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/socket_summary_b_142.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/socket_summary_b_142.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/status_by_accoun_168.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/status_by_accoun_168.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/status_by_host_169.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/status_by_host_169.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/status_by_thread_170.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/status_by_thread_170.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/status_by_user_171.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/status_by_user_171.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/table_handles_151.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/table_handles_151.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/table_io_waits_s_100.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/table_io_waits_s_100.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/table_io_waits_s_101.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/table_io_waits_s_101.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/table_lock_waits_102.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/table_lock_waits_102.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/threads_103.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/threads_103.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/user_defined_fun_179.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/user_defined_fun_179.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/user_variables_b_167.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/user_variables_b_167.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/users_137.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/users_137.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/variables_by_thr_174.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/variables_by_thr_174.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/performance_schema/variables_info_177.sdi" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/performance_schema/variables_info_177.sdi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/private_key.pem" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/private_key.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/public_key.pem" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/public_key.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/server-cert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/server-cert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/server-key.pem" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/server-key.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/sys/sys_config.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/sys/sys_config.ibd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/undo_001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/mysql/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/mysql/undo_002" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/logs/apache2/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/docker/logs/apache2/error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/logs/apache2/other_vhosts_access.log" beforeDir="false" afterPath="$PROJECT_DIR$/docker/logs/apache2/other_vhosts_access.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/mysql/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/webserver/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/webserver/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/admin/dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/admin/login.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Core/Database/ActiveRecord.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Database/ActiveRecord.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Database/Db.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Database/Db.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Database/QueryBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Database/QueryBuilder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Router/UrlDispatcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Router/UrlDispatcher.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Core/Template/Theme.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Template/Theme.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Template/View.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Template/View.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Helpers/Session.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers/Session.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Helpers/Url.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers/Url.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Load.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Load.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Request/RequestProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Request/RequestProvider.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,17 +96,17 @@
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/admin/Views" />
-      <recent name="$PROJECT_DIR$/content/themes/default" />
-      <recent name="C:\Program Files\OSPanel\domains\php-cms.loc\public" />
-      <recent name="C:\Users\Illia_Koliadenko\lab_lessons\php-cms\public" />
-      <recent name="$PROJECT_DIR$/admin/assets/css" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/content/themes/default" />
       <recent name="$PROJECT_DIR$/admin" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/admin/Views" />
+      <recent name="$PROJECT_DIR$/public/css/admin" />
+      <recent name="$PROJECT_DIR$/public/css" />
+      <recent name="$PROJECT_DIR$/admin/Assets/css" />
+      <recent name="$PROJECT_DIR$/content/themes/default" />
     </key>
   </component>
   <component name="RunManager">
@@ -349,6 +190,8 @@
       <workItem from="1581017427015" duration="671000" />
       <workItem from="1581195749574" duration="5023000" />
       <workItem from="1581202738413" duration="4000" />
+      <workItem from="1581249085922" duration="599000" />
+      <workItem from="1581344196034" duration="7857000" />
     </task>
     <servers />
   </component>
@@ -403,10 +246,11 @@
     </state>
     <state x="366" y="104" width="624" height="538" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.25.1366.698@0.25.1366.698" timestamp="1574956019183" />
     <state x="514" y="139" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.25.1920.1009@0.25.1920.1009" timestamp="1575488255194" />
-    <state x="413" y="125" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1579878807516">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="615" y="205" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1581346877911">
+      <screen x="50" y="27" width="1870" height="1053" />
     </state>
     <state x="413" y="125" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1579878807516" />
+    <state x="615" y="205" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/50.27.1870.1053@50.27.1870.1053" timestamp="1581346877911" />
     <state x="613" y="360" width="647" height="482" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#" timestamp="1580645011189">
       <screen x="50" y="27" width="1870" height="1053" />
     </state>
@@ -484,8 +328,8 @@
     </state>
     <state width="1877" height="352" key="GridCell.Tab.2.right/0.0.1920.1050@0.0.1920.1050" timestamp="1577205065433" />
     <state width="1824" height="344" key="GridCell.Tab.2.right/50.27.1870.1053@50.27.1870.1053" timestamp="1580644921124" />
-    <state x="550" y="364" width="569" height="371" key="NewPhpClassDialog" timestamp="1580588125517">
-      <screen x="0" y="27" width="1920" height="1007" />
+    <state x="586" y="379" width="609" height="386" key="NewPhpClassDialog" timestamp="1581347454501">
+      <screen x="50" y="27" width="1870" height="1053" />
     </state>
     <state x="391" y="247" width="573" height="391" key="NewPhpClassDialog/0.0.1366.738@0.0.1366.738" timestamp="1579880899640" />
     <state x="391" y="258" width="450" height="369" key="NewPhpClassDialog/0.25.1366.697@0.25.1366.697" timestamp="1576497757558" />
@@ -493,11 +337,12 @@
     <state x="384" y="481" width="506" height="533" key="NewPhpClassDialog/0.25.1920.1009@0.25.1920.1009" timestamp="1575669449442" />
     <state x="657" y="340" width="585" height="368" key="NewPhpClassDialog/0.25.3286.697@0.25.3286.697" timestamp="1575146700151" />
     <state x="550" y="364" width="569" height="371" key="NewPhpClassDialog/0.27.1920.1007@0.27.1920.1007" timestamp="1580588125517" />
-    <state x="785" y="476" width="389" height="147" key="NewPhpFileDialog" timestamp="1580868957098">
+    <state x="586" y="379" width="609" height="386" key="NewPhpClassDialog/50.27.1870.1053@50.27.1870.1053" timestamp="1581347454501" />
+    <state x="785" y="476" width="399" height="147" key="NewPhpFileDialog" timestamp="1581347600120">
       <screen x="50" y="27" width="1870" height="1053" />
     </state>
     <state x="755" y="456" width="389" height="147" key="NewPhpFileDialog/0.27.1920.1007@0.27.1920.1007" timestamp="1580588500896" />
-    <state x="785" y="476" key="NewPhpFileDialog/50.27.1870.1053@50.27.1870.1053" timestamp="1580868957098" />
+    <state x="785" y="476" width="399" height="147" key="NewPhpFileDialog/50.27.1870.1053@50.27.1870.1053" timestamp="1581347600120" />
     <state x="494" y="237" width="1184" height="741" key="SettingsEditor" timestamp="1580645005120">
       <screen x="50" y="27" width="1870" height="1053" />
     </state>
@@ -524,7 +369,7 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="339" y="165" width="672" height="677" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1579881673305" />
-    <state x="387" y="335" width="922" height="1028" key="search.everywhere.popup" timestamp="1581200691501">
+    <state x="387" y="335" width="922" height="1028" key="search.everywhere.popup" timestamp="1581350123100">
       <screen x="50" y="27" width="1870" height="1053" />
     </state>
     <state x="246" y="216" width="673" height="720" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1579884385691" />
@@ -534,10 +379,10 @@
     <state x="346" y="320" width="672" height="982" key="search.everywhere.popup/0.25.1920.1009@0.25.1920.1009" timestamp="1575668835742" />
     <state x="593" y="229" width="799" height="678" key="search.everywhere.popup/0.25.3286.697@0.25.3286.697" timestamp="1575146629207" />
     <state x="346" y="322" width="946" height="983" key="search.everywhere.popup/0.27.1920.1007@0.27.1920.1007" timestamp="1580583393898" />
-    <state x="387" y="335" width="922" height="1028" key="search.everywhere.popup/50.27.1870.1053@50.27.1870.1053" timestamp="1581200691501" />
-    <state x="710" y="385" width="540" height="334" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1580642098228">
+    <state x="387" y="335" width="922" height="1028" key="search.everywhere.popup/50.27.1870.1053@50.27.1870.1053" timestamp="1581350123100" />
+    <state x="710" y="385" width="540" height="334" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1581359397074">
       <screen x="50" y="27" width="1870" height="1053" />
     </state>
-    <state x="710" y="385" width="540" height="334" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/50.27.1870.1053@50.27.1870.1053" timestamp="1580642098228" />
+    <state x="710" y="385" width="540" height="334" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/50.27.1870.1053@50.27.1870.1053" timestamp="1581359397074" />
   </component>
 </project>

@@ -7,13 +7,14 @@ use src\Controller;
 use src\Core\Database\QueryBuilder;
 use src\DI\DI;
 use src\Exceptions\DIContainerException;
+use src\Helpers\Url;
 
 class LoginController extends Controller
 {
     /**
      * @var Auth
      */
-    protected $auth;
+    protected Auth $auth;
 
     /**
      * LoginController constructor.
@@ -23,12 +24,10 @@ class LoginController extends Controller
     public function __construct(DI $di)
     {
         parent::__construct($di);
-
         $this->auth = new Auth();
 
         if (!is_null($this->auth->userHash())) {
-            header('Location: /admin/');
-            exit();
+            Url::redirect('/admin/');
         }
     }
 
@@ -78,7 +77,6 @@ class LoginController extends Controller
         $this->db->querySql($sql, $queryBuilder->getValuesMerged(), false);
         $this->auth->authorize($hash);
 
-        header('Location: /admin/');
-        exit();
+        Url::redirect('/admin/');
     }
 }

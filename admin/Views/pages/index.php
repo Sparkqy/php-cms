@@ -8,6 +8,7 @@
                 <th scope="col">#</th>
                 <th scope="col">Title</th>
                 <th scope="col">Created at</th>
+                <th scope="col">Options</th>
             </tr>
             </thead>
             <tbody>
@@ -17,6 +18,9 @@
                         <th scope="row"><?= $page['id'] ?></th>
                         <td><?= $page['title'] ?></td>
                         <td><?= $page['created_at'] ?></td>
+                        <td>
+                            <a href="/admin/pages/edit/<?= $page['id'] ?>"><i class="icons icon-pencil"></i> Edit</a>
+                        </td>
                     </tr>
                 <?php endforeach ?>
             <?php endif; ?>

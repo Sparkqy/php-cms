@@ -6,13 +6,19 @@ use src\Controller;
 use src\DI\DI;
 use src\Core\Auth\Auth;
 use src\Exceptions\DIContainerException;
+use src\Helpers\Url;
 
 class AdminController extends Controller
 {
     /**
      * @var Auth
      */
-    protected $auth;
+    protected Auth $auth;
+
+    /**
+     * @var array
+     */
+    protected array $data = [];
 
     /**
      * AdminController constructor.
@@ -26,8 +32,7 @@ class AdminController extends Controller
         $this->auth = new Auth();
 
         if (is_null($this->auth->userHash())) {
-            header('Location: /admin/login');
-            exit();
+            Url::redirect('/admin/login');
         }
     }
 
@@ -41,8 +46,7 @@ class AdminController extends Controller
         }
 
         if (!$this->auth->isAuthorized()) {
-            header('Location: /admin/login', true, 301);
-            exit();
+            Url::redirect('/admin/login');
         }
     }
 }

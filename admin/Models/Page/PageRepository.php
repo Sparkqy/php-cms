@@ -9,6 +9,9 @@ use src\Model;
 
 class PageRepository extends Model
 {
+    /**
+     * @var Page
+     */
     protected Page $pageModel;
 
     /**
@@ -27,9 +30,8 @@ class PageRepository extends Model
      */
     public function getPages(): ?array
     {
-        $query = $this->queryBuilder
-            ->select()
-            ->from('pages')
+        $query = $this->queryBuilder->select()
+            ->from($this->pageModel->getTable())
             ->orderBy('id', 'DESC')
             ->sql();
 
@@ -43,6 +45,31 @@ class PageRepository extends Model
      */
     public function createPage(array $data): string
     {
+        $this->pageModel->title = $data['title'];
+        $this->pageModel->content = $data['content'];
+        return $this->pageModel->save();
+    }
+
+    /**
+     * @param int $id
+     * @return array|bool|null
+     */
+    public function getById(int $id): ?array
+    {
+        $this->pageModel->setId($id);
+
+        return $this->pageModel->findOne();
+    }
+
+    /**
+     * @param int $id
+     * @param array $data
+     * @return string
+     * @throws ReflectionException
+     */
+    public function updatePage(int $id, array $data)
+    {
+        $this->pageModel->setId($id);
         $this->pageModel->title = $data['title'];
         $this->pageModel->content = $data['content'];
         return $this->pageModel->save();

@@ -55,6 +55,20 @@ abstract class ActiveRecord
     }
 
     /**
+     * @return array|null
+     */
+    public function findOne(): ?array
+    {
+        $queryBuilder = $this->queryBuilder->select()
+            ->from($this->getTable())
+            ->where('id', $this->id);
+
+        $result = $this->db->querySql($queryBuilder->sql(), $queryBuilder->getValues('where'));
+
+        return isset($result[0]) ? $result[0] : null;
+    }
+
+    /**
      * @throws ReflectionException
      */
     public function save(): string

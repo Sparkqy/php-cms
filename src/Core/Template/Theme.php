@@ -124,7 +124,7 @@ class Theme
             throw new \Exception(sprintf('View file %s does not exist', $file));
         }
 
-        extract($data);
+        extract(array_merge($data, $this->data));
         require_once $file;
     }
 }

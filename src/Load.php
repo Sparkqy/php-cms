@@ -13,7 +13,7 @@ class Load
     /**
      * @var DI
      */
-    protected $di;
+    protected DI $di;
 
     /**
      * Load constructor.
@@ -29,7 +29,7 @@ class Load
      * @param bool $modelDir
      * @return stdClass
      */
-    public function model(string $modelName, $modelDir = false)
+    public function model(string $modelName, $modelDir = false): stdClass
     {
         $modelName = ucfirst($modelName);
         $model = new stdClass();

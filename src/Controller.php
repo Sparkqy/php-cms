@@ -6,38 +6,52 @@ use src\Core\Database\Db;
 use src\Core\Request\Request;
 use src\Core\Template\View;
 use src\DI\DI;
+use src\DI\Traits\InitDependenciesToProperties;
+use src\Exceptions\DIContainerException;
 
 abstract class Controller
 {
+    use InitDependenciesToProperties;
+
     /**
      * @var DI
      */
-    protected $di;
+    protected DI $di;
 
     /**
      * @var Db
      */
-    protected $db;
+    protected Db $db;
 
     /**
      * @var View
      */
-    protected $view;
+    protected View $view;
 
     /**
      * @var array
      */
-    protected $configs;
+    protected array $configs;
 
     /**
      * @var Request
      */
-    protected $request;
+    protected Request $request;
 
     /**
      * @var Load
      */
-    protected $loader;
+    protected Load $loader;
+
+    /**
+     * @param $name
+     * @return mixed
+     * @throws DIContainerException
+     */
+    public function __get($name)
+    {
+        return $this->di->get($name);
+    }
 
     /**
      * Controller constructor.
@@ -52,5 +66,7 @@ abstract class Controller
         $this->configs = $this->di->get('config');
         $this->request = $this->di->get('request');
         $this->loader = $this->di->get('loader');
+
+        $this->initPropertiesFromDI();
     }
 }

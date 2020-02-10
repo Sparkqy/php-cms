@@ -45,7 +45,7 @@ class DI
      * @param string $key
      * @return bool
      */
-    private function has(string $key): bool
+    public function has(string $key): bool
     {
         return isset($this->container[$key]);
     }

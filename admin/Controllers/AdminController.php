@@ -28,10 +28,9 @@ class AdminController extends Controller
     public function __construct(DI $di)
     {
         parent::__construct($di);
-
         $this->auth = new Auth();
 
-        if (is_null($this->auth->userHash())) {
+        if ($this->auth->userHash() === null) {
             Url::redirect('/admin/login');
         }
     }
@@ -41,7 +40,7 @@ class AdminController extends Controller
      */
     public function checkAuth(): void
     {
-        if (!is_null($this->auth->userHash())) {
+        if ($this->auth->userHash() !== null) {
             $this->auth->authorize($this->auth->userHash());
         }
 

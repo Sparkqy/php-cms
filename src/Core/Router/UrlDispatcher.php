@@ -15,7 +15,7 @@ class UrlDispatcher
     /**
      * @var array
      */
-    private $routes = [
+    private array $routes = [
         self::METHODS['get'] => [],
         self::METHODS['post'] => [],
     ];
@@ -23,7 +23,7 @@ class UrlDispatcher
     /**
      * @var array
      */
-    private $patterns = [
+    private array $patterns = [
         'int' => '[0-9]+',
         'string' => '[a-zA-Z\.\-_%]+',
         'any' => '[a-zA-Z0-9\.\-_%]+',

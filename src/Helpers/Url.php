@@ -2,7 +2,7 @@
 
 namespace src\Helpers;
 
-use src\Core\Router\Router;
+use admin\Controllers\ErrorsController;
 
 class Url
 {
@@ -49,5 +49,25 @@ class Url
         $env = explode('/', $_SERVER['REQUEST_URI']);
 
         return ($env[1] === 'admin') ? 'admin' : 'cms';
+    }
+
+    /**
+     * @param string $location
+     */
+    public static function redirect(string $location): void
+    {
+        header('Location: ' . $location);
+        return;
+    }
+
+    /**
+     * @param string $sessionKey
+     * @param array $sessionValue
+     * @param string $redirectPath
+     */
+    public static function redirectWithFlash(string $sessionKey, array $sessionValue, string $redirectPath): void
+    {
+        Session::set($sessionKey, $sessionValue);
+        self::redirect($redirectPath);
     }
 }

@@ -8,8 +8,8 @@
     <meta name="author" content="">
     <title>Login to CMS</title>
 
-    <link href="/admin/assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/admin/assets/css/login.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/login.css" rel="stylesheet">
 </head>
 <body>
 <div class="container">

@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'host' => 'mysql',
+    'host' => 'db',
     'db_name' => 'php-cms',
     'user' => 'root',
     'password' => 'root',

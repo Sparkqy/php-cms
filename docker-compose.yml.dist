@@ -1,0 +1,45 @@
+version: "3.4"
+
+services:
+  # Apache + PHP
+  webserver:
+    build:
+      context: ./docker/webserver
+    container_name: 'php-cms_webserver'
+    restart: 'always'
+    ports:
+      - "127.0.0.1:8001:80"
+    volumes:
+      - ${DOCUMENT_ROOT-./}:/var/www/html/php-cms
+      - ${PHP_INI-./docker/configs/php/php.ini}:/usr/local/etc/php/php.ini
+      - ${VHOSTS_DIR-./docker/configs/vhosts}:/etc/apache2/sites-enabled
+      - ${LOG_DIR-./docker/logs/apache2}:/var/log/apache2
+    environment:
+      XDEBUG_CONFIG: "remote_host=host.docker.internal remote_enable=1"
+      PHP_IDE_CONFIG: "serverName=Docker"
+    links:
+      - db
+  # DB MySQL
+  db:
+    image: mysql:5.6.40
+    ports:
+      - "127.0.0.1:3306:3306"
+    container_name: 'php-cms_db'
+    restart: always
+    environment:
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - ./docker/db/data:/var/lib/mysql
+  # phpMyAdmin
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: 'php-cms_phpmyadmin'
+    links:
+      - db
+    ports:
+      - "127.0.0.1:8765:80"
+    restart: always
+    environment:
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}

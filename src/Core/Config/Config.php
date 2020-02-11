@@ -33,7 +33,7 @@ class Config
      */
     public static function file(string $group)
     {
-        $path = $_SERVER['DOCUMENT_ROOT'] . '/' . strtolower(ENV) . '/configs/' . $group . '.php';
+        $path = $_SERVER['DOCUMENT_ROOT'] . '/../' . strtolower(ENV) . '/configs/' . $group . '.php';
 
         if (!file_exists($path)) {
             return null;

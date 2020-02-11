@@ -5,9 +5,9 @@ namespace src\Core\Template;
 class View
 {
     /**
-     * @var \src\Core\Template\Theme
+     * @var Theme
      */
-    protected $theme;
+    protected Theme $theme;
 
     public function __construct()
     {
@@ -44,9 +44,9 @@ class View
     private function getTemplatePath(string $template, string $env = null): string
     {
         if ($env === 'cms') {
-            return $_SERVER['DOCUMENT_ROOT'] . '/content/themes/default/' . $template . '.php';
+            return $_SERVER['DOCUMENT_ROOT'] . '/../content/themes/default/' . $template . '.php';
         }
 
-        return $_SERVER['DOCUMENT_ROOT'] . '/admin/Views/' . $template . '.php';
+        return $_SERVER['DOCUMENT_ROOT'] . '/../admin/Views/' . $template . '.php';
     }
 }

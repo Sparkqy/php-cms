@@ -3,6 +3,7 @@
 namespace src\Services\Request;
 
 use src\Core\Request\Request;
+use src\Exceptions\DIContainerException;
 use src\Services\AbstractProvider;
 
 class RequestProvider extends AbstractProvider
@@ -12,6 +13,9 @@ class RequestProvider extends AbstractProvider
      */
     const SERVICE_NAME = 'request';
 
+    /**
+     * @throws DIContainerException
+     */
     public function init(): void
     {
         $request = new Request();

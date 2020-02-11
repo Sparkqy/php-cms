@@ -48,7 +48,7 @@ class LoginController extends Controller
 
         $result = $this->db->querySql($sql, $queryBuilder->getValues('where'));
 
-        if (is_null($result) || !password_verify($data['password'], $result[0]['password'])) {
+        if ($result === null || !password_verify($data['password'], $result[0]['password']) || $result[0]['role'] !== 'admin') {
             $_SESSION['error'] = [
                 'message' => 'User with this email or password does not exist. Please provide valid data',
                 'type' => 'alert-danger',
@@ -57,15 +57,6 @@ class LoginController extends Controller
         }
 
         $user = $result[0];
-
-        if ($user['role'] !== 'admin') {
-            $_SESSION['error'] = [
-                'message' => 'Only admin user can login to the system',
-                'type' => 'alert-danger',
-            ];
-            Url::redirect('/admin/');
-        }
-
         $hash = password_hash($user['id'] . $user['email'] . $user['password'], 1);
         $sql = $queryBuilder->update('users')
             ->set(['hash' => $hash])

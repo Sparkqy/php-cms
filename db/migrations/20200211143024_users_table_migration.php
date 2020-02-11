@@ -33,7 +33,7 @@ class UsersTableMigration extends AbstractMigration
     {
         $table = $this->table('users');
         $table->addColumn('email', 'string', ['limit' => 100])
-            ->addColumn('password', 'string', ['limit' => 40])
+            ->addColumn('password', 'string', ['limit' => 100])
             ->addColumn('hash', 'string', ['null' => true])
             ->addColumn('role', 'enum', [
                 'values' => ['admin', 'user'],

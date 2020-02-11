@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a82aedcf-dac6-4939-9808-d0706e9fe0ba" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php-cms.loc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php-cms.loc.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/Models/Page/Page.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/Models/Page/Page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/Models/User/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/Models/User/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrations/20200211143024_users_table_migration.php" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrations/20200211143024_users_table_migration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/seeds/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds/UserSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Helpers/Url.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers/Url.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

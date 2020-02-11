@@ -18,12 +18,12 @@ class UserSeeder extends AbstractSeed
         $data = [
             [
                 'email' => 'admin@admin.com',
-                'password' => sha1('admin'),
+                'password' => password_hash('admin', PASSWORD_DEFAULT),
                 'role' => 'admin',
             ],
             [
                 'email' => 'user@user.com',
-                'password' => sha1('user'),
+                'password' => password_hash('user', PASSWORD_DEFAULT),
             ],
         ];
 

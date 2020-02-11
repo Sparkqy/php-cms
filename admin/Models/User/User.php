@@ -9,35 +9,35 @@ class User extends ActiveRecord
     /**
      * @var string
      */
-    protected $table = 'users';
+    protected string $table = 'users';
 
     /**
      * @var int
      */
-    public $id;
+    public int $id;
 
     /**
      * @var string
      */
-    public $email;
+    public string $email;
 
     /**
      * @var string
      */
-    public $password;
+    public string $password;
 
     /**
      * @var string
      */
-    public $hash;
+    public string $hash;
 
     /**
      * @var string
      */
-    public $role;
+    public string $role;
 
     /**
      * @var string
      */
-    public $created_at;
+    public string $created_at;
 }

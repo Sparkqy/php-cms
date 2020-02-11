@@ -9,25 +9,25 @@ class Page extends ActiveRecord
     /**
      * @var string
      */
-    protected $table = 'pages';
+    protected string $table = 'pages';
 
     /**
      * @var int
      */
-    public $id;
+    public int $id;
 
     /**
      * @var string
      */
-    public $title;
+    public string $title;
 
     /**
      * @var string
      */
-    public $content;
+    public string $content;
 
     /**
      * @var string
      */
-    public $created_at;
+    public string $created_at;
 }

@@ -53,8 +53,7 @@ class LoginController extends Controller
                 'message' => 'User with this email or password does not exist. Please provide valid data',
                 'type' => 'alert-danger',
             ];
-            header('Location: /admin/login');
-            exit();
+            Url::redirect('/admin/login');
         }
 
         $user = $result[0];
@@ -64,8 +63,7 @@ class LoginController extends Controller
                 'message' => 'Only admin user can login to the system',
                 'type' => 'alert-danger',
             ];
-            header('Location: /admin/login');
-            exit();
+            Url::redirect('/admin/');
         }
 
         $hash = password_hash($user['id'] . $user['email'] . $user['password'], 1);

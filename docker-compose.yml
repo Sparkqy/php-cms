@@ -6,7 +6,7 @@ services:
     build:
       context: ./docker/webserver
     container_name: 'php-cms_webserver'
-    restart: 'always'
+    restart: always
     ports:
       - "127.0.0.1:8001:80"
     volumes:
